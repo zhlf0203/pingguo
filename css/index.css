@@ -4,6 +4,13 @@ header{
 	height: 40px;
 	background: #444444;
 }
+.max ul li a:hover{
+	color: #ccc
+}
+.min ul li a:hover{
+	color: #ccc
+}
+
 .nk{
 	height: 40px;
 	margin: 0 auto;
@@ -19,6 +26,11 @@ nav{
 	width: 100%;
 	height: 44px;
 	background: #333333;
+	position: fixed;
+	top: 40px;
+	left: 0;
+	z-index: 999
+	
 }
 nav ul{
 	height: 44px;
@@ -724,7 +736,7 @@ section ul .iohone8{
 	}
 	.dubusan{
 		width: 100%;
-		/* height: 460px; */
+		height: auto;
 		background: #f2f2f2;
 		padding: 0 20px 20px;
 		box-sizing: border-box;
@@ -734,8 +746,11 @@ section ul .iohone8{
     	height: 37px;
     	border-bottom: 1px solid #d6d6d6;
     	line-height: 37px;
-    	/* padding-right: 20px;
-    	box-sizing: border-box; */
+    	/* padding-right: 20px; */
+    	box-sizing: border-box;
+    	overflow: hidden;
+    	padding-top: 1px;
+
     }
     h5{
     	font-size: 10px;
@@ -746,7 +761,8 @@ section ul .iohone8{
     	float: right;
     	font-size: 10px;
     	color: #333;
-    	margin-right: 10px
+    	margin-right: 10px;
+    	transition:all 0.4s
     }
     .dsl{
 	width: 100%;
@@ -820,6 +836,26 @@ section ul .iohone8{
 	.dubusan{
 		display: block;
 	}
+	.buxuyao{
+		width: 100%;
+		height: auto;
+		background: red;
+		margin-top: 37px;
 
+
+	}
+	.buxuyao li{
+		width: 100%;
+		height: 26px;
+		background: #f2f2f2;
+		padding: 6px 14px;
+		color: #555;
+		box-sizing: border-box;
+		font-size: 10px;
+			}
+	.buxuyao li:hover{
+		cursor: pointer; 
+		text-decoration: underline;
+	}
 }
 /* 响应式结束 */
